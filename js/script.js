@@ -26,28 +26,36 @@ window.addEventListener('scroll', () => {
 });
 
 // Formulário de contato
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
+// const contactForm = document.getElementById('contactForm');
+// if (contactForm) {
+//     contactForm.addEventListener('submit', function(e) {
+//         e.preventDefault();
         
-        // Simulação de envio do formulário
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            message: document.getElementById('message').value
-        };
+//         // Simulação de envio do formulário
+//         const formData = {
+//             name: document.getElementById('name').value,
+//             email: document.getElementById('email').value,
+//             message: document.getElementById('message').value
+//         };
         
-        // Aqui você normalmente faria uma requisição para um servidor
-        console.log('Dados do formulário:', formData);
+//         // Aqui você normalmente faria uma requisição para um servidor
+//         console.log('Dados do formulário:', formData);
         
-        // Mostrar notificação de sucesso
-        showNotification('Mensagem enviada com sucesso! Entrarei em contato em breve.', 'success');
+//         // Mostrar notificação de sucesso
+//         showNotification('Mensagem enviada com sucesso! Entrarei em contato em breve.', 'success');
         
-        // Limpar formulário
-        contactForm.reset();
-    });
-}
+//         // Limpar formulário
+//         contactForm.reset();
+//     });
+// }
+
+// Mostrar notificação se veio de um envio bem-sucedido
+document.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("success") === "true") {
+        showNotification("Mensagem enviada com sucesso! Obrigado pelo contato.", "success");
+    }
+});
 
 // Função para mostrar notificações
 function showNotification(message, type = 'info') {
