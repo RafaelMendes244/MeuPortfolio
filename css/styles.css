@@ -819,3 +819,20 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/* Adicione este código ao final do seu styles.css */
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+    /* Faz a barra do meio desaparecer */
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+    /* Move a primeira barra para o centro e a rotaciona */
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+    /* Move a terceira barra para o centro e a rotaciona na direção oposta */
+}
