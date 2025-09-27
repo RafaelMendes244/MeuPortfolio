@@ -1,0 +1,7 @@
+# Permitir todos os bots para rastrear a página
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+
+# Sitemap
+Sitemap: https://rafaelmendesportfolio.vercel.app/sitemap.xml
