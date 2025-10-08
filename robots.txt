@@ -4,4 +4,4 @@ Disallow: /admin/
 Disallow: /login/
 
 # Sitemap
-Sitemap: https://rafaelmendesportfolio.vercel.app/sitemap.xml
+Sitemap: https://rmdev.vercel.app/sitemap.xml
