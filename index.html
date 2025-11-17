@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Mendes | Desenvolvedor Full Stack Python - Portfólio e Projetos</title>
+    <title>Rafael Mendes | Desenvolvedor Full Stack Python</title>
     <meta name="google-site-verification" content="K-ZT_JK-8ndINwB_9qVNX5mxr00meOFy_qg4LvbXYA0" />
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -54,12 +54,12 @@
     "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer service",
-        "telephone": "+55-83-12345678",
+        "telephone": "+55-83-92000-6113",
         "areaServed": "BR",
         "availableLanguage": "Portuguese"
     },
     "skills": [
-        "Python", "Django", "Flask", "JavaScript", "HTML5", "CSS3", "API Development"
+        "Python", "Django", "Flask", "JavaScript", "HTML5", "CSS3", "API Development", "PostgreSQL"
     ]
     }
     </script>
@@ -80,10 +80,18 @@
                 <li><a href="#video" class="nav-link">Vídeo</a></li>
                 <li><a href="#contact" class="nav-link">Contato</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-actions">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="theme-toggle">
+                        <input type="checkbox" id="theme-toggle" />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
     </header>
@@ -92,17 +100,17 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    Rafael Mendes: <span class="highlight">Desenvolvedor Full Stack Python</span>
+                    Desenvolvedor <span class="highlight">Full Stack Python</span>
                 </h1>
-                <h2 class="hero-subtitle">Transformando ideias em soluções digitais de alto desempenho</h2>
+                <h2 class="hero-subtitle">Construindo soluções web robustas com Django e Flask.</h2>
                 <p class="hero-description">
-                    Transformo ideias em experiências digitais funcionais e elegantes. Especializado em criar
-                    soluções web modernas, responsivas e de alto desempenho que impulsionam negócios e resolvem
-                    problemas reais.
+                    Especialista na criação de sistemas web escaláveis e APIs eficientes.
+                    Meu foco é transformar problemas de negócio complexos em software funcional e de alto desempenho.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                    <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+                    <a href="curriculo/Currículo - Ângelo Rafael Mendes Bezerra.pdf" class="btn btn-secondary"
+                        download>Download CV</a>
                 </div>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/fael-mendesdev/" target="_blank" class="social-link">
@@ -121,7 +129,7 @@
             </div>
             <div class="hero-image">
                 <img src="images/fotoperfil.webp"
-                    alt="Foto de perfil de Rafael Mendes, um desenvolvedor Full Stack Python sorrindo."
+                    alt="Foto de perfil de Rafael Mendes, um desenvolvedor Full Stack Python."
                     class="profile-img">
             </div>
         </div>
@@ -133,22 +141,42 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        Sou Rafael Mendes, desenvolvedor full stack em formação, focado em transformar ideias em
-                        soluções digitais práticas e funcionais.
-                        Atualmente, estou me especializando em desenvolvimento Full Stack com Python, criando aplicações
-                        web que oferecem valor real aos negócios.
-                        Estou sempre em busca de aprendizado constante e de novos desafios para evoluir como
-                        profissional na área de tecnologia.
+                        Sou um Desenvolvedor Full Stack com foco em Python, utilizando frameworks como Django e Flask
+                        para construir o back-end de aplicações robustas. Minha paixão é arquitetar e implementar
+                        soluções que resolvam problemas reais de negócios.
                     </p>
-
                     <p>
-                        Minha abordagem combina conhecimento técnico sólido com compreensão das necessidades do cliente,
-                        resultando em produtos que não apenas funcionam perfeitamente, mas também geram impacto positivo
-                        nos objetivos de negócio.
+                        Com experiência prática no desenvolvimento de sistemas completos, desde a modelagem do banco de
+                        dados (PostgreSQL) até a criação de APIs RESTful e a integração com o front-end (HTML, CSS,
+                        JS), estou sempre buscando otimizar a performance e a experiência do usuário.
                     </p>
+                    <a href="curriculo/Ângelo Rafael Mendes Bezerra - Currículo.pdf" class="btn btn-primary" download
+                        style="margin-top: 1rem;">
+                        Download do meu Currículo
+                    </a>
                     <div class="skills">
-                        <h3>Habilidades Técnicas</h3>
+                        <h3>Tecnologias Principais</h3>
                         <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-server"></i>
+                                <span>Django</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-flask"></i>
+                                <span>Flask</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
                             <div class="skill-item">
                                 <i class="fab fa-html5"></i>
                                 <span>HTML5</span>
@@ -158,24 +186,8 @@
                                 <span>CSS3</span>
                             </div>
                             <div class="skill-item">
-                                <i class="fab fa-js"></i>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-react"></i>
-                                <span>React</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-node-js"></i>
-                                <span>Node.js</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-python"></i>
-                                <span>Python</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-database"></i>
-                                <span>Banco de Dados</span>
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git & GitHub</span>
                             </div>
                         </div>
                     </div>
@@ -186,26 +198,29 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Meus Projetos</h2>
+            <h2 class="section-title">Projetos em Destaque</h2>
             <div class="projects-grid">
+
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-icon">
-                            <i class="fas fa-cake"></i>
+                            <i class="fas fa-calendar-alt"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="https://saboresdolar.vercel.app/" target="_blank" class="project-link">
+                            <a href="https://rmagendamentos.online/" target="_blank" class="project-link">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Sabores do Lar</h3>
-                        <p>Site para confeitaria artesanal com design moderno e responsivo. Desenvolvido com foco na
-                            experiência do usuário e apresentação dos produtos.</p>
+                        <h3>RM Agendamentos</h3>
+                        <p>Sistema completo de agendamentos para prestadores de serviço, permitindo gerenciamento de
+                            clientes, horários e serviços com painel administrativo.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag django">Django</span>
+                            <span class="tech-tag sql">PostgreSQL</span>
+                            <span class="tech-tag">HTML/CSS</span>
                             <span class="tech-tag">JavaScript</span>
                         </div>
                     </div>
@@ -214,44 +229,23 @@
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-icon">
-                            <i class="fas fa-tooth"></i>
+                            <i class="fas fa-dollar-sign"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="https://sorrifacilpb.vercel.app/" target="_blank" class="project-link">
+                            <a href="https://rmcred.com.br/" target="_blank" class="project-link">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Sorrifácil PB</h3>
-                        <p>Website para clínica de odontologia infantil com design lúdico e acolhedor. Sistema de
-                            agendamento integrado e informações sobre serviços.</p>
+                        <h3>RM Cred (Gestão Pessoal)</h3>
+                        <p>Aplicação para gestão de clientes e controle financeiro pessoal, focada em segurança e
+                            organização de dados sensíveis e transações.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://rmsites.vercel.app/" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>WebSites RM</h3>
-                        <p>Site institucional para empresa de desenvolvimento web. Apresenta serviços, portfólio e
-                            sistema de contato para potenciais clientes.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag flask">Flask</span>
+                            <span class="tech-tag sql">PostgreSQL</span>
+                            <span class="tech-tag">HTML/CSS</span>
                             <span class="tech-tag">JavaScript</span>
                         </div>
                     </div>
@@ -273,11 +267,10 @@
                         <p>Plataforma completa para simulados do ENEM com sistema de correção, relatórios de desempenho
                             e ranking competitivo entre estudantes.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag python">Python</span>
                             <span class="tech-tag">IA</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
                         </div>
                     </div>
                 </div>
@@ -303,7 +296,8 @@
                         Desenvolvido com tecnologias modernas e focado na experiência do usuário final.
                     </p>
                     <p>
-                        Este projeto demonstra minha capacidade de desenvolver aplicações full-stack com funcionalidades
+                        Este projeto (RM Agendamentos) demonstra minha capacidade de desenvolver aplicações full-stack
+                        com funcionalidades
                         complexas, integração de APIs e interfaces intuitivas.
                     </p>
                 </div>
@@ -318,22 +312,22 @@
                 <div class="contact-info">
                     <h3>Vamos trabalhar juntos!</h3>
                     <p>
-                        Tem um projeto em mente? Precisa de um site profissional ou sistema web?
+                        Tem um projeto em mente? Precisa de um sistema web ou uma API?
                         Entre em contato comigo e vamos transformar sua ideia em realidade.
                     </p>
                     <div class="contact-methods">
                         <div class="contact-method">
                             <i class="fab fa-whatsapp"></i>
                             <span><a href="https://wa.me/5583920006113" target="_blank"
-                                    style="text-decoration: none;">(83) 92000-6113</a></span>
+                                    style="text-decoration: none; color: inherit;">(83) 92000-6113</a></span>
                         </div>
                         <div class="contact-method">
                             <i class="fas fa-envelope"></i>
-                            <span>gabriel.mito07@gmail.com</span>
+                            <span>rafinha.break07@gmail.com</span>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm" action="https://formsubmit.co/gabriel.mito07@gmail.com"
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/rafinha.break07@gmail.com"
                     method="POST">
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Seu Nome" required>
@@ -359,8 +353,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 <a class="link-site" href="https://rmsites.vercel.app/" target="_blank">WebSites RM</a>.
-                    Todos os direitos reservados.</p>
+                <p>&copy; 2025 Rafael Mendes. Todos os direitos reservados.</p>
                 <div class="footer-social">
                     <a href="https://www.linkedin.com/in/fael-mendesdev/" target="_blank" class="social-link">
                         <i class="fab fa-linkedin"></i>
